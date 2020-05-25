@@ -41,13 +41,14 @@
                                     </span>
         @endif
 
-    <div class="btn_box">
+        <div class="btn_box">
             <button type="submit" class="btn purple">
                 Register
             </button>
-    </div>
+        </div>
     </form>
 
 
 
 @endsection
+
