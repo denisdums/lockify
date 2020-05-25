@@ -18,6 +18,15 @@
                       </span>
                   @endif
 
+              <div class="remember">
+                  <span>Se souvenir de moi</span>
+                  <div class="button r" id="button-3">
+                      <input type="checkbox" name="remember" class="checkbox">
+                      <div class="knobs"></div>
+                      <div class="layer"></div>
+                  </div>
+              </div>
+
 
 
 
@@ -33,11 +42,7 @@
                   <a href="/" class="btn linealpurple">Précédent</a>
               </div>
 
-              <div class="button r" id="button-3">
-                  <input type="checkbox" name="remember" class="checkbox">
-                  <div class="knobs"></div>
-                  <div class="layer"></div>
-              </div>
+
 
                     </form>
 
