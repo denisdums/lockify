@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/assets/css/master.css">
 </head>
 <body>
+<div class="all">
 <img src="/assets/images/fond.png" alt="Fond de Lockify" class="fonddecran">
 <div class="overlay"></div>
 <div class="loading">
@@ -35,5 +36,6 @@
 
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/script.js"></script>
+</div>
 </body>
 </html>
