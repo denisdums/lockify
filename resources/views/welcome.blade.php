@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/modern-normalize.css">
-    <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/modern-normalize.css">
+    <link rel="stylesheet" href="assets/css/master.css">
 </head>
 <body>
-<img src="/assets/images/fond.png" alt="Fond de Lockify" class="fonddecran">
+<img src="assets/images/fond.png" alt="Fond de Lockify" class="fonddecran">
 <div class="overlay"></div>
 <div class="loading">
 
     <div class="logo_loader">
-        <img src="/assets/images/logo_blanc.svg" alt="Logo de Lockify">
+        <img src="assets/images/logo_blanc.svg" alt="Logo de Lockify">
         <span class="baseline">Unlock all your day to day services</span>
     </div>
 </div>
@@ -32,7 +32,7 @@
     </div>
 </div>
 
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/script.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

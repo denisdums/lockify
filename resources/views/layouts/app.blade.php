@@ -10,19 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/modern-normalize.css">
-    <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/modern-normalize.css">
+    <link rel="stylesheet" href="assets/css/master.css">
 </head>
 <body>
+
+<div class="container">
     <div class="logo">
-        <img src="/assets/images/logo_noir.svg" alt="Logo de Lockify">
+        <img src="assets/images/logo_noir.svg" alt="Logo de Lockify">
     </div>
 <div class="main">
     @yield('content')
 </div>
-
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/script.js"></script>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
 
