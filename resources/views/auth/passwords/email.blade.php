@@ -4,20 +4,22 @@
 @section('content')
 
 
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/password/email') }}">
-                        {{ csrf_field() }}
+    <form class="form" role="form" method="POST" action="{{ url('/password/email') }}">
+        {{ csrf_field() }}
 
-                               <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+        <input id="email" placeholder="Mail" type="email" class="form-input" name="email" value="{{ old('email') }}">
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+        @if ($errors->has('email'))
+            <span class="error">
+                <strong>{{ $errors->first('email') }}</strong>
+            </span>
+        @endif
+<div class="btn_box">
+        <button type="submit" class="btn purple">
+            Envoyer
+        </button>
+</div>
 
-                              <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-envelope"></i> Send Password Reset Link
-
-                    </form>
+    </form>
 
 @endsection
