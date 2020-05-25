@@ -5,7 +5,7 @@
                         {{ csrf_field() }}
               <input id="email" type="email" class="form-input" name="email" value="{{ old('email') }}" placeholder="Mail">
                   @if ($errors->has('email'))
-                      <span class="help-block">
+                      <span class="error">
                           <strong>{{ $errors->first('email') }}</strong>
                       </span>
                   @endif
@@ -13,7 +13,7 @@
               <input id="password" type="password" class="form-input" name="password" placeholder="Mot de passe">
 
                   @if ($errors->has('password'))
-                      <span class="help-block">
+                      <span class="error">
                           <strong>{{ $errors->first('password') }}</strong>
                       </span>
                   @endif
@@ -37,7 +37,7 @@
 
 
               <div class="btn_box">
-                  <a class="" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
+                  <a class="forgot" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
                   <button type="submit" class="btn purple">Login</button>
                   <a href="/" class="btn linealpurple">Précédent</a>
               </div>

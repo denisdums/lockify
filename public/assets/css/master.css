@@ -6,6 +6,8 @@ body{
 *{
     font-family: 'Montserrat';
     outline: none;
+
+}
 }
 /*** WELCOME SCREEN ***/
 .fonddecran{
@@ -265,6 +267,20 @@ body{
 #button-3 .checkbox:checked ~ .layer
 {
     background-color: #333;
+}
+
+.forgot{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+}
+
+.error{
+    font-size: 12px;
+    color: red;
+    margin-top: 10px;
 }
 
 
