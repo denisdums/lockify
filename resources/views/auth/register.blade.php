@@ -2,51 +2,12 @@
 
 @section('content')
 
-    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
-        {{ csrf_field() }}
+    <img src="/assets/images/illustrationRegister.svg" alt="Illustration Register">
+
+    <a href="/register_client" class="btn purple">JE SUIS CLIENT</a>
+    <a href="/register_entrepreneur" class="btn linealpurple">JE SUIS ENTREPRENEUR</a>
 
 
-
-        <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
-
-        @if ($errors->has('name'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-        @endif
-
-
-
-        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
-
-        @if ($errors->has('email'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-        @endif
-
-
-        <input id="password" type="password" class="form-control" name="password">
-
-        @if ($errors->has('password'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-        @endif
-        <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
-
-        @if ($errors->has('password_confirmation'))
-            <span class="help-block">
-                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                    </span>
-        @endif
-
-    <div class="btn_box">
-            <button type="submit" class="btn purple">
-                Register
-            </button>
-    </div>
-    </form>
 
 
 
