@@ -71,6 +71,12 @@ body{
     width: 100%;
     bottom: 50px;
 }
+
+.btn_loader{
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+}
 .welcome{
     opacity: 0;
     width: 100%;
