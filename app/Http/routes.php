@@ -20,3 +20,10 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/register/client', 'RegistrationController@create');
+Route::post('/register', 'RegistrationController@store');
+
+Route::get('/login', 'SessionsController@create');
+Route::post('/login', 'SessionsController@store');
+Route::get('/logout', 'SessionsController@destroy');
+

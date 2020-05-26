@@ -5,4 +5,6 @@ $(document).ready(function(){
         $('.welcome').addClass('visible')
     },2000)
 
+
+
 });
