@@ -187,6 +187,8 @@ body{
 
 
 
+
+
 .knobs, .layer
 {
     position: absolute;
@@ -273,7 +275,7 @@ body{
 {
     content: '';
     left: 42px;
-    background-color: #white;
+    background-color: white;
 }
 
 #button-3 .checkbox:checked ~ .layer

@@ -3,12 +3,12 @@
 @section('content')
 
 
+    <img src="/assets/images/illustrationRegister.svg" alt="Illustration Register">
 
-    <div class="btn_box">
-            <button type="submit" class="btn purple">
-                Register
-            </button>
-    </div>
+
+    <a href="/register_client" class="btn purple">JE SUIS CLIENT</a>
+    <a href="/register_entrepreneur" class="btn linealpurple">JE SUIS ENTREPRENEUR</a>
+
 
 
 
