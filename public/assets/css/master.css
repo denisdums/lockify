@@ -71,16 +71,23 @@ body{
 }
 
 .container{
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     position: relative;
+    overflow-x: hidden;
 }
 
 .btn_box{
     position: absolute;
     width: 100%;
     bottom: 50px;
+}
+
+.btn_loader{
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
 }
 .welcome{
     opacity: 0;
@@ -141,10 +148,11 @@ body{
 
 /*** REGISTER & LOGIN SCREEN ***/
 .main{
+    margin: auto;
     min-height: 100vh;
     position: relative;
     padding-top: 150px;
-    width: 100%;
+    width: 90%;
 }
 .logo{
     width: 50%;
@@ -178,6 +186,14 @@ body{
     height: 60px;
     align-items: center;
 
+}
+
+.illustration_register{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform:translate(-50%,-35%);
+    width: 100vw;
 }
 
 

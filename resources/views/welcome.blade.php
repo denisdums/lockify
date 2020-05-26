@@ -27,7 +27,7 @@
 </div>
 <div class="welcome">
     <div class="container">
-        <div class="btn_box">
+        <div class="btn_box btn_loader">
             <a href="/login" class="btn white">Se connecter</a>
             <a href="/register" class="btn linealwhite">S'inscrire</a>
         </div>
