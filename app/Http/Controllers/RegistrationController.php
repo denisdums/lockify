@@ -33,7 +33,7 @@ class RegistrationController extends Controller
             'ville'=>'required',
             'pays'=>'required',
             'password' => 'required|confirmed',
-            'avatar' => 'required'
+            'avatar' => 'file'
         ]);
 
         $avatar = $request -> file('avatar')->hashName();
@@ -58,5 +58,46 @@ class RegistrationController extends Controller
 
 
         return redirect()->to('/home');
+    }
+
+    public function storeEnt(Request $request)
+    {
+
+        dd($request);
+        $this->validate($request, [
+            'firstname' => 'required',
+            'lastname' => 'required',
+            'birthdate'=>'required|date',
+            'email' => 'required|email',
+            'phone'=>'required|digits:10',
+            'adresse'=>'required',
+            'ville'=>'required',
+            'pays'=>'required',
+            'password' => 'required|confirmed',
+            'avatar' => 'file'
+        ]);
+
+        $avatar = $request -> file('avatar')->hashName();
+        $request->file('avatar')->move("uploads/", $avatar);
+
+        $c = new User();
+        $c->firstname = $request->input('firstname');
+        $c->lastname = $request->input('lastname');
+        $c->entrepreneur = false;
+        $c->birthdate = $request->input('birthdate');
+        $c->email = $request->input('email');
+        $c->phone = $request->input('phone');
+        $c->adresse = $request->input('adresse');
+        $c->ville = $request->input('ville');
+        $c->pays = $request->input('pays');
+        $c->avatar = "uploads/".$avatar;
+        $c->password = $request->input('password');
+        $c-> save();
+
+
+        if(Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')], true))
+
+
+            return redirect()->to('/home');
     }
 }

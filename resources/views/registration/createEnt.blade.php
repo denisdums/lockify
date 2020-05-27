@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form method="POST" action="{{ url('/register') }}" enctype="multipart/form-data">
+    <form method="POST" action="{{ url('/registerEnt') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="part_one">
 
@@ -29,11 +29,11 @@
             @endif
 
             <select name="categorie" class="form-input">
-                <option>Boucher</option>
-                <option>Coiffeur</option>
-                <option>Garage</option>
-                <option>Opticien</option>
-                <option>Boucher</option>
+                <option value="boucher">Boucher</option>
+                <option value="coiffeur">Coiffeur</option>
+                <option value="garage">Garage</option>
+                <option value="opticien">Opticien</option>
+                <option value="boucher">Boucher</option>
             </select>
 
         <input id="description" type="text" class="form-input" name="description" value="{{ old('description') }}" placeholder="Description">
@@ -79,7 +79,7 @@
                       </span>
             @endif
 
-            <select name="categorie" class="form-input">
+            <select name="creneau" class="form-input">
                 <option disabled selected hidden>Créneau</option>
                 <option value="5">5 min</option>
                 <option value="15">15 min</option>
@@ -91,7 +91,7 @@
             </select>
 
 
-            <input type="file" name="avatar" id="avatar" required id="coverchanson" class="input-file2" accept="image/*">
+            <input type="file" name="avatar" id="avatar" id="coverchanson" class="input-file2" accept="image/*">
             <div class="btn_box">
                 <label for="avatar" class="btn purple">PHOTO</label>
                 <span class="btn purple" id="register_second_next">Suivant</span>
@@ -111,7 +111,7 @@
 
                 <div class="open_button_reel">
                     <div class="button r" id="button-3">
-                        <input type="checkbox" name="open_monday" class="checkbox">
+                        <input type="checkbox" name="open_monday" class="checkbox" id="monday_button">
                         <div class="knobs"></div>
                         <div class="layer"></div>
                     </div>
@@ -120,30 +120,30 @@
                 </div>
 
 
-                <div class="horaire_form">
+                <div class="horaire_form" id="horaire_monday">
                     <div>
                         <div class="open_button">
                             <div class="button r" id="button-3">
-                                <input type="checkbox" name="monday_morn" class="checkbox">
+                                <input type="checkbox" name="monday_morn" class="checkbox horaire_monday"id="monday_morn">
                                 <div class="knobs"></div>
                                 <div class="layer"></div>
                             </div>
 
                             Matin
                         </div>
-                        <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                        <div class="ligne_form">De <input type="time" name="monday_morn_start" class="horaire_monday morn"> à  <input class="horaire_monday morn" type="time" name="monday_morn_end"></div>
                     </div>
                     <div>
                         <div class="open_button">
                             <div class="button r" id="button-3">
-                                <input type="checkbox" name="monday_after" class="checkbox">
+                                <input type="checkbox" name="monday_after" class="checkbox horaire_monday" id="monday_after">
                                 <div class="knobs"></div>
                                 <div class="layer"></div>
                             </div>
 
                             Après-midi
                         </div>
-                        <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                        <div class="ligne_form">De <input type="time" name="monday_after_start" class="horaire_monday after"> à  <input type="time" name="monday_after_end" class="horaire_monday after"></div>
                     </div>
                 </div>
 
@@ -182,7 +182,7 @@
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="tuesday_morn_start"> à  <input type="time" name="tuesday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
@@ -194,7 +194,7 @@
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="tuesday_after_start"> à  <input type="time" name="tuesday_after_start"></div>
                 </div>
             </div>
 
@@ -233,7 +233,7 @@
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="wednesday_morn_start"> à  <input type="time" name="wednesday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
@@ -245,7 +245,7 @@
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="wednesday_after_start"> à  <input type="time" name="wednesday_after_end"></div>
                 </div>
             </div>
 
@@ -284,7 +284,7 @@
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="thursday_morn_start"> à  <input type="time" name="thursday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
@@ -296,7 +296,7 @@
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="thursday_after_start"> à  <input type="time" name="thursday_after_end"></div>
                 </div>
             </div>
 
@@ -335,7 +335,7 @@
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="friday_morn_start"> à  <input type="time" name="friday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
@@ -347,7 +347,7 @@
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="friday_after_start"> à  <input type="time" name="friday_after_end"></div>
                 </div>
             </div>
 
@@ -386,7 +386,7 @@
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="saturday_morn_start"> à  <input type="time" name="saturday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
@@ -398,7 +398,7 @@
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="saturday_after_start"> à  <input type="time" name="saturday_after_end"></div>
                 </div>
             </div>
 
@@ -437,7 +437,7 @@
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="sunday_morn_start"> à  <input type="time" name="sunday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
@@ -449,7 +449,7 @@
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    <div class="ligne_form">De <input type="time" name="sunday_after_start"> à  <input type="time" name="sunday_after_end"></div>
                 </div>
             </div>
 

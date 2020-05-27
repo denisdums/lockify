@@ -23,6 +23,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/register/client', 'RegistrationController@create');
 Route::get('/register/entrepreneur', 'RegistrationController@createEnt');
 Route::post('/register', 'RegistrationController@store');
+Route::post('/registerEnt', 'RegistrationController@storeEnt');
 
 
 

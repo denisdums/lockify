@@ -127,6 +127,63 @@ $(document).ready(function(){
         $('.timeline_entrepreneur').css('width','90%');
     });
 
+    $("#monday_button").on("change", ()=>{
+        if($("#monday_button").prop("checked")){
+            console.log('pas checked');
+            $('.horaire_monday').prop("checked", true);
+            $('.horaire_monday').prop("disabled", true);
+        }
+        else{
+            console.log('checked sqdds');
+            $('.horaire_monday').prop("checked", false);
+            $('.horaire_monday').prop("disabled", false);
+        }
+
+    });
+    $('#monday_morn').on('change',()=>{
+        if($('#monday_morn').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_monday.morn').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_monday.morn').prop("disabled", false);
+        }
+    });
+    $('#monday_after').on('change',()=>{
+        if($('#monday_after').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_monday.after').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_monday.after').prop("disabled", false);
+        }
+    });
+
+
+
+
+    $("form").submit(function () {
+
+        var this_master = $(this);
+
+        this_master.find('input[type="checkbox"]').each( function () {
+            var checkbox_this = $(this);
+
+
+            if( checkbox_this.is(":checked") == true ) {
+                checkbox_this.attr('value','0');
+            } else {
+                checkbox_this.prop('checked',true);
+                //DONT' ITS JUST CHECK THE CHECKBOX TO SUBMIT FORM DATA
+                checkbox_this.attr('value','1');
+            }
+        })
+    })
+
 });
 
 
