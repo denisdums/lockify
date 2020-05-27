@@ -9,7 +9,7 @@ $(document).ready(function(){
     //register client
     setTimeout(()=>{
         $('.timeline_client').css('width','33%');
-    },500)
+    },500);
 
     $('#register_first_next').click(function () {
         $('.part_one').css('display','none');
@@ -35,5 +35,15 @@ $(document).ready(function(){
         $('.timeline_client').css('width','66%');
     });
 
-
 });
+
+//affichage de la photo
+var loadFileClient = function (event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+        var output = document.getElementById('preview');
+        output.src = reader.result;
+        $('#preview').css('display','block')
+    };
+    reader.readAsDataURL(event.target.files[0]);
+};

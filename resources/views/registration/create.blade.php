@@ -74,7 +74,8 @@
                           <strong>{{ $errors->first('pays') }}</strong>
                       </span>
             @endif
-            <input type="file" name="avatar" id="avatar" required id="coverchanson" class="input-file2" accept="image/*">
+            <input type="file" name="avatar" id="avatar" required id="coverchanson" class="input-file2" accept="image/*"  onchange="loadFileClient(event)">
+            <div class="container_preview"><img src="" alt="" id="preview"></div>
             <div class="btn_box fill_box_btn">
                 <label for="avatar" class="btn purple">PHOTO</label>
                 <span class="btn purple" id="register_second_next">Suivant</span>

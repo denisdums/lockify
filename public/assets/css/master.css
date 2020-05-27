@@ -202,6 +202,21 @@ body{
 
 #avatar{display: none}
 
+.container_preview{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#preview{
+    display: none;
+    margin: auto;
+    width: 50vw;
+    height: 50vw;
+
+}
+
 .part_two{display: none}
 .part_three{display: none}
 
