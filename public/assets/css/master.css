@@ -207,12 +207,13 @@ body{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #preview{
     display: none;
     margin: auto;
-    width: 50vw;
     height: 50vw;
 
 }
