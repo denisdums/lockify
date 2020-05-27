@@ -103,7 +103,7 @@
 
 
 
-            <div class="part_three">
+            <div class="form-group part_three">
                 <div class="jour_form">
                     <img src="/assets/images/fond.png" alt="image de fond">
                     <span class="jour_text">Lundi</span>
@@ -149,12 +149,12 @@
 
                 <div class="btn_box">
 
-                    <span class="btn purple" id="register_second_next">Suivant</span>
-                    <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+                    <span class="btn purple" id="register_third_next">Suivant</span>
+                    <span  class="btn linealpurple" id="register_second_previous">Précédent</span>
                 </div>
             </div>
 
-        <div class="part_four">
+        <div class="form-group part_four">
             <div class="jour_form">
                 <img src="/assets/images/fond.png" alt="image de fond">
                 <span class="jour_text">Mardi</span>
@@ -200,12 +200,12 @@
 
             <div class="btn_box">
 
-                <span class="btn purple" id="register_second_next">Suivant</span>
-                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+                <span class="btn purple" id="register_fourth_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_third_previous">Précédent</span>
             </div>
         </div>
 
-        <div class="part_five">
+        <div class="form-group part_five">
             <div class="jour_form">
                 <img src="/assets/images/fond.png" alt="image de fond">
                 <span class="jour_text">Mercredi</span>
@@ -251,12 +251,12 @@
 
             <div class="btn_box">
 
-                <span class="btn purple" id="register_second_next">Suivant</span>
-                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+                <span class="btn purple" id="register_five_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_fourth_previous">Précédent</span>
             </div>
         </div>
 
-        <div class="part_six">
+        <div class="form-group part_six">
             <div class="jour_form">
                 <img src="/assets/images/fond.png" alt="image de fond">
                 <span class="jour_text">Jeudi</span>
@@ -302,12 +302,12 @@
 
             <div class="btn_box">
 
-                <span class="btn purple" id="register_second_next">Suivant</span>
-                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+                <span class="btn purple" id="register_six_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_five_previous">Précédent</span>
             </div>
         </div>
 
-        <div class="part_seven">
+        <div class="form-group part_seven">
             <div class="jour_form">
                 <img src="/assets/images/fond.png" alt="image de fond">
                 <span class="jour_text">Vendredi</span>
@@ -353,12 +353,12 @@
 
             <div class="btn_box">
 
-                <span class="btn purple" id="register_second_next">Suivant</span>
-                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+                <span class="btn purple" id="register_seven_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_six_previous">Précédent</span>
             </div>
         </div>
 
-        <div class="part_eight">
+        <div class="form-group part_eight">
             <div class="jour_form">
                 <img src="/assets/images/fond.png" alt="image de fond">
                 <span class="jour_text">Samedi</span>
@@ -404,12 +404,12 @@
 
             <div class="btn_box">
 
-                <span class="btn purple" id="register_second_next">Suivant</span>
-                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+                <span class="btn purple" id="register_eight_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_seven_previous">Précédent</span>
             </div>
         </div>
 
-        <div class="part_nine">
+        <div class="form-group part_nine">
             <div class="jour_form">
                 <img src="/assets/images/fond.png" alt="image de fond">
                 <span class="jour_text">Dimanche</span>
@@ -455,12 +455,12 @@
 
             <div class="btn_box">
 
-                <span class="btn purple" id="register_second_next">Suivant</span>
-                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+                <span class="btn purple" id="register_nine_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_eight_previous">Précédent</span>
             </div>
         </div>
-<!--
-        <div class="part_ten">
+
+        <div class="form-group part_ten">
             <input id="password" type="password" class="form-input" name="password" value="{{ old('password') }}" placeholder="Mot de passe">
             @if ($errors->has('password'))
                 <span class="error">
@@ -474,8 +474,14 @@
                           <strong>{{ $errors->first('password_confirmation') }}</strong>
                       </span>
             @endif
+
+            <div class="btn_box">
+
+                <button type="submit" class="btn purple">S'inscrire</button>
+                <span id="register_nine_previous" class="btn linealpurple">Précédent</span>
+            </div>
         </div>
---->
+
 
 
 

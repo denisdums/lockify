@@ -241,7 +241,9 @@ body{
     background-color: #7A2AE8;
 }
 
-
+.form-group{
+    display: none;
+}
 
 
 
