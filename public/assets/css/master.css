@@ -396,5 +396,57 @@ body{
 }
 
 
+/*** Menu ***/
+
+.menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_menu{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container_menu a {
+    width: 7vh;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu_selected{
+    background: rgba(206, 198, 255, 0.3);
+}
+
+.icon{
+    width:5vh;
+    height: 4vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container_menu span{
+    font-size: 8.5px;
+    font-weight: 600;
+    color: black;
+}
+
+
+
+
 
 
