@@ -104,21 +104,378 @@
 
 
             <div class="part_three">
-                <input id="password" type="password" class="form-input" name="password" value="{{ old('password') }}" placeholder="Mot de passe">
-                @if ($errors->has('password'))
-                    <span class="error">
-                          <strong>{{ $errors->first('password') }}</strong>
-                      </span>
-                @endif
+                <div class="jour_form">
+                    <img src="/assets/images/fond.png" alt="image de fond">
+                    <span class="jour_text">Lundi</span>
+                </div>
 
-                <input id="password_confirmation" type="password" class="form-input" name="password_confirmation" value="{{ old('password_confirmation') }}" placeholder="Confirmer le mot de passe">
-                @if ($errors->has('password_confirmation'))
-                    <span class="error">
-                          <strong>{{ $errors->first('password_confirmation') }}</strong>
-                      </span>
-                @endif
+                <div class="open_button">
+                    <div class="button r" id="button-3">
+                        <input type="checkbox" name="open_monday" class="checkbox">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                    </div>
+
+                    OUVERT
+                </div>
+
+
+                <div class="horaire_form">
+                    <div>
+                        <div class="open_button">
+                            <div class="button r" id="button-3">
+                                <input type="checkbox" name="monday_morn" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+
+                            Matin
+                        </div>
+                        <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    </div>
+                    <div>
+                        <div class="open_button">
+                            <div class="button r" id="button-3">
+                                <input type="checkbox" name="monday_after" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+
+                            Après-midi
+                        </div>
+                        <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                    </div>
+                </div>
+
+                <div class="btn_box">
+
+                    <span class="btn purple" id="register_second_next">Suivant</span>
+                    <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+                </div>
             </div>
 
+        <div class="part_four">
+            <div class="jour_form">
+                <img src="/assets/images/fond.png" alt="image de fond">
+                <span class="jour_text">Mardi</span>
+            </div>
+
+            <div class="open_button">
+                <div class="button r" id="button-3">
+                    <input type="checkbox" name="open_tuesday" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
+
+                OUVERT
+            </div>
+
+
+            <div class="horaire_form">
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="tuesday_morn" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Matin
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="tuesday_after" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Après-midi
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+            </div>
+
+            <div class="btn_box">
+
+                <span class="btn purple" id="register_second_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+            </div>
+        </div>
+
+        <div class="part_five">
+            <div class="jour_form">
+                <img src="/assets/images/fond.png" alt="image de fond">
+                <span class="jour_text">Mercredi</span>
+            </div>
+
+            <div class="open_button">
+                <div class="button r" id="button-3">
+                    <input type="checkbox" name="open_wednesday" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
+
+                OUVERT
+            </div>
+
+
+            <div class="horaire_form">
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="wednesday_morn" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Matin
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="wednesday_after" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Après-midi
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+            </div>
+
+            <div class="btn_box">
+
+                <span class="btn purple" id="register_second_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+            </div>
+        </div>
+
+        <div class="part_six">
+            <div class="jour_form">
+                <img src="/assets/images/fond.png" alt="image de fond">
+                <span class="jour_text">Jeudi</span>
+            </div>
+
+            <div class="open_button">
+                <div class="button r" id="button-3">
+                    <input type="checkbox" name="open_thursday" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
+
+                OUVERT
+            </div>
+
+
+            <div class="horaire_form">
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="thursday_morn" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Matin
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="thursday_after" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Après-midi
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+            </div>
+
+            <div class="btn_box">
+
+                <span class="btn purple" id="register_second_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+            </div>
+        </div>
+
+        <div class="part_seven">
+            <div class="jour_form">
+                <img src="/assets/images/fond.png" alt="image de fond">
+                <span class="jour_text">Vendredi</span>
+            </div>
+
+            <div class="open_button">
+                <div class="button r" id="button-3">
+                    <input type="checkbox" name="open_friday" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
+
+                OUVERT
+            </div>
+
+
+            <div class="horaire_form">
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="friday_morn" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Matin
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="friday_after" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Après-midi
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+            </div>
+
+            <div class="btn_box">
+
+                <span class="btn purple" id="register_second_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+            </div>
+        </div>
+
+        <div class="part_eight">
+            <div class="jour_form">
+                <img src="/assets/images/fond.png" alt="image de fond">
+                <span class="jour_text">Samedi</span>
+            </div>
+
+            <div class="open_button">
+                <div class="button r" id="button-3">
+                    <input type="checkbox" name="open_saturday" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
+
+                OUVERT
+            </div>
+
+
+            <div class="horaire_form">
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="saturday_morn" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Matin
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="saturday_after" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Après-midi
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+            </div>
+
+            <div class="btn_box">
+
+                <span class="btn purple" id="register_second_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+            </div>
+        </div>
+
+        <div class="part_nine">
+            <div class="jour_form">
+                <img src="/assets/images/fond.png" alt="image de fond">
+                <span class="jour_text">Dimanche</span>
+            </div>
+
+            <div class="open_button">
+                <div class="button r" id="button-3">
+                    <input type="checkbox" name="open_sunday" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                </div>
+
+                OUVERT
+            </div>
+
+
+            <div class="horaire_form">
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="sunday_morn" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Matin
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+                <div>
+                    <div class="open_button">
+                        <div class="button r" id="button-3">
+                            <input type="checkbox" name="sunday_after" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+
+                        Après-midi
+                    </div>
+                    <div class="ligne_form">De <input type="time" name=""> à  <input type="time" name=""></div>
+                </div>
+            </div>
+
+            <div class="btn_box">
+
+                <span class="btn purple" id="register_second_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+            </div>
+        </div>
+<!--
+        <div class="part_ten">
+            <input id="password" type="password" class="form-input" name="password" value="{{ old('password') }}" placeholder="Mot de passe">
+            @if ($errors->has('password'))
+                <span class="error">
+                          <strong>{{ $errors->first('password') }}</strong>
+                      </span>
+            @endif
+
+            <input id="password_confirmation" type="password" class="form-input" name="password_confirmation" value="{{ old('password_confirmation') }}" placeholder="Confirmer le mot de passe">
+            @if ($errors->has('password_confirmation'))
+                <span class="error">
+                          <strong>{{ $errors->first('password_confirmation') }}</strong>
+                      </span>
+            @endif
+        </div>
+--->
 
 
 

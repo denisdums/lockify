@@ -54,9 +54,9 @@ class RegistrationController extends Controller
         $c-> save();
 
 
+        if(Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')], true))
 
 
-
-        return redirect()->to('/');
+        return redirect()->to('/home');
     }
 }
