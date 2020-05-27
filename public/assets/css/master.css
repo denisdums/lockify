@@ -243,6 +243,8 @@ body{
 
 .form-group{
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
 .timeline_entrepreneur{
@@ -371,6 +373,11 @@ body{
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 20px;
+}
+
+.button{
+    margin-right: 10px;
 }
 
 .jour_form > img{
@@ -395,6 +402,41 @@ body{
     font-weight: 700;
 }
 
+.open_button_reel{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.open_button{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.form-flex{
+
+}
+
+.horaire_form{
+    width: 80%;
+
+}
+
+.ligne_form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.ligne_form > input[type='time']{
+    border: 0;
+    border-bottom: 2px solid #7A2AE8;
+    text-align: center;
+}
 
 
 

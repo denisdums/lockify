@@ -103,13 +103,13 @@
 
 
 
-            <div class="form-group part_three">
+            <div class="form-group form-flex part_three">
                 <div class="jour_form">
                     <img src="/assets/images/fond.png" alt="image de fond">
                     <span class="jour_text">Lundi</span>
                 </div>
 
-                <div class="open_button">
+                <div class="open_button_reel">
                     <div class="button r" id="button-3">
                         <input type="checkbox" name="open_monday" class="checkbox">
                         <div class="knobs"></div>
@@ -160,7 +160,7 @@
                 <span class="jour_text">Mardi</span>
             </div>
 
-            <div class="open_button">
+            <div class="open_button_reel">
                 <div class="button r" id="button-3">
                     <input type="checkbox" name="open_tuesday" class="checkbox">
                     <div class="knobs"></div>
@@ -211,7 +211,7 @@
                 <span class="jour_text">Mercredi</span>
             </div>
 
-            <div class="open_button">
+            <div class="open_button_reel">
                 <div class="button r" id="button-3">
                     <input type="checkbox" name="open_wednesday" class="checkbox">
                     <div class="knobs"></div>
@@ -262,7 +262,7 @@
                 <span class="jour_text">Jeudi</span>
             </div>
 
-            <div class="open_button">
+            <div class="open_button_reel">
                 <div class="button r" id="button-3">
                     <input type="checkbox" name="open_thursday" class="checkbox">
                     <div class="knobs"></div>
@@ -313,7 +313,7 @@
                 <span class="jour_text">Vendredi</span>
             </div>
 
-            <div class="open_button">
+            <div class="open_button_reel">
                 <div class="button r" id="button-3">
                     <input type="checkbox" name="open_friday" class="checkbox">
                     <div class="knobs"></div>
@@ -364,7 +364,7 @@
                 <span class="jour_text">Samedi</span>
             </div>
 
-            <div class="open_button">
+            <div class="open_button_reel">
                 <div class="button r" id="button-3">
                     <input type="checkbox" name="open_saturday" class="checkbox">
                     <div class="knobs"></div>
@@ -415,7 +415,7 @@
                 <span class="jour_text">Dimanche</span>
             </div>
 
-            <div class="open_button">
+            <div class="open_button_reel">
                 <div class="button r" id="button-3">
                     <input type="checkbox" name="open_sunday" class="checkbox">
                     <div class="knobs"></div>
