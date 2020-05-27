@@ -41,7 +41,7 @@
                 </span>
             @endif
 
-            <div class="btn_box">
+            <div class="btn_box fill_box_btn">
                 <span class="btn purple" id="register_first_next">Suivant</span>
                 <a href="/register" class="btn linealpurple">Précédent</a>
             </div>
@@ -74,8 +74,9 @@
                           <strong>{{ $errors->first('pays') }}</strong>
                       </span>
             @endif
-            <input type="file" name="avatar" id="avatar" required id="coverchanson" class="input-file2" accept="image/*">
-            <div class="btn_box">
+            <input type="file" name="avatar" id="avatar" required id="coverchanson" class="input-file2" accept="image/*"  onchange="loadFileClient(event)">
+            <div class="container_preview"><img src="" alt="" id="preview"></div>
+            <div class="btn_box fill_box_btn">
                 <label for="avatar" class="btn purple">PHOTO</label>
                 <span class="btn purple" id="register_second_next">Suivant</span>
                 <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
@@ -99,7 +100,7 @@
                     <strong>{{ $errors->first('password_confirmation') }}</strong>
                 </span>
             @endif
-            <div class="btn_box">
+            <div class="btn_box fill_box_btn">
                 <button type="submit" class="btn purple" id="register_first_next">S'inscrire</button>
                 <span id="register_second_previous" class="btn linealpurple">Précédent</span>
             </div>

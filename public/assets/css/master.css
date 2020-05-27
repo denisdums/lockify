@@ -84,6 +84,10 @@ body{
     bottom: 50px;
 }
 
+.fill_box_btn{
+    background-color: white;
+}
+
 .btn_loader{
     width: 90%;
     left: 50%;
@@ -197,6 +201,22 @@ body{
 }
 
 #avatar{display: none}
+
+.container_preview{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#preview{
+    display: none;
+    margin: auto;
+    height: 50vw;
+
+}
 
 .part_two{display: none}
 .part_three{display: none}
