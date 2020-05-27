@@ -69,7 +69,7 @@
                       </span>
             @endif
 
-            <input type="file" name="avatar" required id="coverchanson" class="input-file2" accept="image/*">
+            <input type="file" name="avatar" required id="coverchanson" class="input-file2" accept="image/*" capture="filesystem">
 
 
 
