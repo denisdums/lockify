@@ -6,41 +6,47 @@
         {{ csrf_field() }}
         <div class="part_one">
 
+            <input id="firstname" type="text" class="form-input" name="firstname" value="{{ old('firstname') }}" placeholder="Prénom">
+            @if ($errors->has('firstname'))
+                <span class="error">
+                    <strong>{{ $errors->first('firstname') }}</strong>
+                </span>
+            @endif
 
-        <input id="firstname" type="text" class="form-input" name="firstname" value="{{ old('firstname') }}" placeholder="Prénom">
-        @if ($errors->has('firstname'))
-            <span class="error">
-                          <strong>{{ $errors->first('firstname') }}</strong>
-                      </span>
-        @endif
-
-        <input id="lastname" type="text" class="form-input" name="lastname" value="{{ old('lastname') }}" placeholder="Nom">
-        @if ($errors->has('lastname'))
-            <span class="error">
-                         <strong>{{ $errors->first('lastname') }}</strong>
-            </span>
-        @endif
+            <input id="lastname" type="text" class="form-input" name="lastname" value="{{ old('lastname') }}" placeholder="Nom">
+            @if ($errors->has('lastname'))
+                <span class="error">
+                    <strong>{{ $errors->first('lastname') }}</strong>
+                </span>
+            @endif
 
             <input id="birthdate" type="date" class="form-input" name="birthdate" value="{{ old('birthdate') }}" placeholder="Date de naissance">
             @if ($errors->has('birthdate'))
                 <span class="error">
-                         <strong>{{ $errors->first('birthdate') }}</strong>
-            </span>
+                    <strong>{{ $errors->first('birthdate') }}</strong>
+                </span>
             @endif
 
-        <input id="email" type="email" class="form-input" name="email" value="{{ old('email') }}" placeholder="Mail">
-        @if ($errors->has('email'))
-            <span class="error">
-                          <strong>{{ $errors->first('email') }}</strong>
-                      </span>
-        @endif
+            <input id="email" type="email" class="form-input" name="email" value="{{ old('email') }}" placeholder="Mail">
+            @if ($errors->has('email'))
+                <span class="error">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+            @endif
 
-        <input id="phone" class="form-input input-element" name="phone" value="{{ old('phone') }}" placeholder="Numéro de téléphone">
-        @if ($errors->has('phone'))
-            <span class="error">
-                          <strong>{{ $errors->first('phone') }}</strong>
-                      </span>
-        @endif
+            <input id="phone" class="form-input input-element" name="phone" value="{{ old('phone') }}" placeholder="Numéro de téléphone">
+            @if ($errors->has('phone'))
+                <span class="error">
+                    <strong>{{ $errors->first('phone') }}</strong>
+                </span>
+            @endif
+
+            <div class="btn_box">
+                <span class="btn purple" id="register_first_next">Suivant</span>
+                <a href="/register" class="btn linealpurple">Précédent</a>
+            </div>
+
+        </div>
 
 
 
@@ -68,43 +74,46 @@
                           <strong>{{ $errors->first('pays') }}</strong>
                       </span>
             @endif
-
-            <input type="file" name="avatar" required id="coverchanson" class="input-file2" accept="image/*" capture="filesystem">
-
-
-
+            <input type="file" name="avatar" id="avatar" required id="coverchanson" class="input-file2" accept="image/*">
+            <div class="btn_box">
+                <label for="avatar" class="btn purple">PHOTO</label>
+                <span class="btn purple" id="register_second_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+            </div>
         </div>
 
 
 
-            <div class="part_three">
-                <input id="password" type="password" class="form-input" name="password" value="{{ old('password') }}" placeholder="Mot de passe">
-                @if ($errors->has('password'))
-                    <span class="error">
-                          <strong>{{ $errors->first('password') }}</strong>
-                      </span>
+
+        <div class="part_three">
+            <input id="password" type="password" class="form-input" name="password" value="{{ old('password') }}" placeholder="Mot de passe">
+            @if ($errors->has('password'))
+                <span class="error">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </span>
                 @endif
 
-                <input id="password_confirmation" type="password" class="form-input" name="password_confirmation" value="{{ old('password_confirmation') }}" placeholder="Confirmer le mot de passe">
-                @if ($errors->has('password_confirmation'))
-                    <span class="error">
-                          <strong>{{ $errors->first('password_confirmation') }}</strong>
-                      </span>
-                @endif
+            <input id="password_confirmation" type="password" class="form-input" name="password_confirmation" value="{{ old('password_confirmation') }}" placeholder="Confirmer le mot de passe">
+            @if ($errors->has('password_confirmation'))
+                <span class="error">
+                    <strong>{{ $errors->first('password_confirmation') }}</strong>
+                </span>
+            @endif
+            <div class="btn_box">
+                <button type="submit" class="btn purple" id="register_first_next">S'inscrire</button>
+                <span id="register_second_previous" class="btn linealpurple">Précédent</span>
             </div>
-            </div>
-            </div>
-        <div class="form-group">
+        </div>
+
+        <!-- <div class="form-group">
             <button style="cursor:pointer" type="submit" class="btn btn-primary">Submit</button>
-        </div>
+        </div> -->
 
 
 
     </form>
-<!--
-    <div class="btn_box">
 
-        <button type="submit" class="btn purple">Suivant</button>
-        <a href="/" class="btn linealpurple">Précédent</a>
-    </div> -->
 @endsection
+<div class="timeline">
+    <div class="timeline_content timeline_client"></div>
+</div>
