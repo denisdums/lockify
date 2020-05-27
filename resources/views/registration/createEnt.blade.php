@@ -43,6 +43,10 @@
             </span>
         @endif
 
+            <div class="btn_box">
+                <span class="btn purple" id="register_first_next">Suivant</span>
+                <a href="/register" class="btn linealpurple">Précédent</a>
+            </div>
         </div>
 
         <div class="form-group part_two">
@@ -87,8 +91,12 @@
             </select>
 
 
-            <input type="file" name="avatar" required id="coverchanson" class="input-file2" accept="image/*" capture="filesystem">
-
+            <input type="file" name="avatar" id="avatar" required id="coverchanson" class="input-file2" accept="image/*">
+            <div class="btn_box">
+                <label for="avatar" class="btn purple">PHOTO</label>
+                <span class="btn purple" id="register_second_next">Suivant</span>
+                <span  class="btn linealpurple" id="register_first_previous">Précédent</span>
+            </div>
 
 
         </div>
@@ -110,11 +118,8 @@
                       </span>
                 @endif
             </div>
-            </div>
-            </div>
-        <div class="form-group">
-            <button style="cursor:pointer" type="submit" class="btn btn-primary">Submit</button>
-        </div>
+
+
 
 
 
