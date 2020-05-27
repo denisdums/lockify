@@ -27,7 +27,7 @@ class RegistrationController extends Controller
             'adresse'=>'required',
             'ville'=>'required',
             'pays'=>'required',
-            'password' => 'required',
+            'password' => 'required|confirmed',
             'avatar' => 'required'
         ]);
 

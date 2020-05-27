@@ -85,10 +85,10 @@
                       </span>
                 @endif
 
-                <input id="password" type="password" class="form-input" name="password" value="{{ old('password') }}" placeholder="Mot de passe">
-                @if ($errors->has('password'))
+                <input id="password_confirmation" type="password" class="form-input" name="password_confirmation" value="{{ old('password_confirmation') }}" placeholder="Confirmer le mot de passe">
+                @if ($errors->has('password_confirmation'))
                     <span class="error">
-                          <strong>{{ $errors->first('password') }}</strong>
+                          <strong>{{ $errors->first('password_confirmation') }}</strong>
                       </span>
                 @endif
             </div>
