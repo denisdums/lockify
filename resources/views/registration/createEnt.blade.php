@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form method="POST" action="{{ url('/registerEnt') }}" enctype="multipart/form-data">
+    <form class="register" method="POST" action="{{ url('/registerEnt') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="part_one">
 
@@ -160,7 +160,7 @@
                 <span class="jour_text">Mardi</span>
             </div>
 
-            <div class="open_button_reel">
+            <div class="open_button_reel" id="horaire_tuesday">
                 <div class="button r" id="button-3">
                     <input type="checkbox" name="open_tuesday" class="checkbox">
                     <div class="knobs"></div>
@@ -175,14 +175,14 @@
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="tuesday_morn" class="checkbox">
+                            <input type="checkbox" name="tuesday_morn" class="checkbox" id="tuesday_morn">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name="tuesday_morn_start"> à  <input type="time" name="tuesday_morn_end"></div>
+                    <div class="ligne_form">De <input type="time" name="tuesday_morn_start" class="horaire_tuesday morn"> à  <input type="time" name="tuesday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">

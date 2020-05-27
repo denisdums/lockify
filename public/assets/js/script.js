@@ -166,7 +166,7 @@ $(document).ready(function(){
 
 
 
-    $("form").submit(function () {
+    $("form.register").submit(function () {
 
         var this_master = $(this);
 
