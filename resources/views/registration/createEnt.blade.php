@@ -494,3 +494,7 @@
         <a href="/" class="btn linealpurple">Précédent</a>
     </div> -->
 @endsection
+
+<div class="timeline">
+    <div class="timeline_content timeline_entrepreneur"></div>
+</div>
