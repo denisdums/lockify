@@ -9,7 +9,7 @@ $(document).ready(function(){
     //register client
     setTimeout(()=>{
         $('.timeline_client').css('width','33%');
-    },1000)
+    },500)
 
     $('#register_first_next').click(function () {
         $('.part_one').css('display','none');
