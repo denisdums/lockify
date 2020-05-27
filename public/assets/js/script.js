@@ -132,12 +132,17 @@ $(document).ready(function(){
 
 
 //affichage de la photo
-var loadFileClient = function (event) {
-    var reader = new FileReader();
-    reader.onload = function () {
-        var output = document.getElementById('preview');
-        output.src = reader.result;
-        $('#preview').css('display','block')
-    };
-    reader.readAsDataURL(event.target.files[0]);
-};
+var myInput = document.getElementById('myFileInput');
+
+function sendPic() {
+    var file = myInput.files[0];
+
+    // Send file here either by adding it to a `FormData` object
+    // and sending that via XHR, or by simply passing the file into
+    // the `send` method of an XHR instance.
+}
+
+myInput.addEventListener('change', sendPic, false);
+
+
+//acces files appli
