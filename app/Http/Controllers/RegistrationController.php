@@ -14,6 +14,11 @@ class RegistrationController extends Controller
         return view('registration.create');
     }
 
+    public function createEnt()
+    {
+        return view('registration.createEnt');
+    }
+
     public function store(Request $request)
     {
 

@@ -7,46 +7,45 @@
         <div class="part_one">
 
 
-        <input id="firstname" type="text" class="form-input" name="firstname" value="{{ old('firstname') }}" placeholder="Prénom">
-        @if ($errors->has('firstname'))
+        <input id="entreprisename" type="text" class="form-input" name="entreprisename" value="{{ old('entreprisename') }}" placeholder="Nom de l'entreprise">
+        @if ($errors->has('entreprisename'))
             <span class="error">
-                          <strong>{{ $errors->first('firstname') }}</strong>
+                          <strong>{{ $errors->first('entreprisename') }}</strong>
                       </span>
         @endif
 
-        <input id="lastname" type="text" class="form-input" name="lastname" value="{{ old('lastname') }}" placeholder="Nom">
-        @if ($errors->has('lastname'))
-            <span class="error">
-                         <strong>{{ $errors->first('lastname') }}</strong>
-            </span>
-        @endif
-
-            <input id="birthdate" type="date" class="form-input" name="birthdate" value="{{ old('birthdate') }}" placeholder="Date de naissance">
-            @if ($errors->has('birthdate'))
+            <input id="email" type="email" class="form-input" name="email" value="{{ old('email') }}" placeholder="Mail">
+            @if ($errors->has('email'))
                 <span class="error">
-                         <strong>{{ $errors->first('birthdate') }}</strong>
-            </span>
-            @endif
-
-        <input id="email" type="email" class="form-input" name="email" value="{{ old('email') }}" placeholder="Mail">
-        @if ($errors->has('email'))
-            <span class="error">
                           <strong>{{ $errors->first('email') }}</strong>
                       </span>
-        @endif
+            @endif
 
-        <input id="phone" class="form-input input-element" name="phone" value="{{ old('phone') }}" placeholder="Numéro de téléphone">
-        @if ($errors->has('phone'))
-            <span class="error">
+            <input id="phone" class="form-input input-element" name="phone" value="{{ old('phone') }}" placeholder="Numéro de téléphone">
+            @if ($errors->has('phone'))
+                <span class="error">
                           <strong>{{ $errors->first('phone') }}</strong>
                       </span>
+            @endif
+
+            <select name="categorie" class="form-input">
+                <option>Boucher</option>
+                <option>Coiffeur</option>
+                <option>Garage</option>
+                <option>Opticien</option>
+                <option>Boucher</option>
+            </select>
+
+        <input id="description" type="text" class="form-input" name="description" value="{{ old('description') }}" placeholder="Description">
+        @if ($errors->has('description'))
+            <span class="error">
+                         <strong>{{ $errors->first('description') }}</strong>
+            </span>
         @endif
 
+        </div>
 
-
-
-
-        <div class="part_two">
+        <div class="form-group part_two">
             <input type="text" class="form-control form-input" id="form-address" placeholder="Adresse" name="adresse" value="{{ old('adresse') }}"/>
             @if ($errors->has('adresse'))
                 <span class="error">
@@ -68,6 +67,25 @@
                           <strong>{{ $errors->first('pays') }}</strong>
                       </span>
             @endif
+
+            <input type="number" class="form-control form-input" id="maxclient" placeholder="Nombre max. de client" name="maxclient" value="{{ old('maxclient') }}"/>
+            @if ($errors->has('maxclient'))
+                <span class="error">
+                          <strong>{{ $errors->first('maxclient') }}</strong>
+                      </span>
+            @endif
+
+            <select name="categorie" class="form-input">
+                <option disabled selected hidden>Créneau</option>
+                <option value="5">5 min</option>
+                <option value="15">15 min</option>
+                <option value="20">20 min</option>
+                <option value="30">30 min</option>
+                <option value="45">45 min</option>
+                <option value="60">1 h</option>
+
+            </select>
+
 
             <input type="file" name="avatar" required id="coverchanson" class="input-file2" accept="image/*" capture="filesystem">
 
