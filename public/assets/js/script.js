@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+
+
+
     //animation du loading de l'app et de la page welcome
     setTimeout(()=>{
         $('.loading').addClass("loaded");
@@ -297,7 +301,7 @@ $(document).ready(function(){
         })
     })
 
-});
+
 
 $("#saturday_button").on("change", ()=>{
     if($("#saturday_button").prop("checked")){
@@ -369,6 +373,7 @@ $('#sunday_after').on('change',()=>{
         console.log('checked')
         $('.horaire_sunday.after').prop("disabled", false);
     }
+
 });
 
 
@@ -386,4 +391,8 @@ function sendPic() {
 myInput.addEventListener('change', sendPic, false);
 
 
-//acces files appli
+
+
+
+
+});
