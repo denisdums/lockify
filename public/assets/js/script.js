@@ -47,6 +47,7 @@ $(document).ready(function(){
 
     $('#register_third_next').click(function () {
         $('.part_three').css('display','none');
+        $('.part_three_ent').css('display','none');
         $('.part_four').css('display','flex');
         $('.timeline_entrepreneur').css('width','40%');
     });
