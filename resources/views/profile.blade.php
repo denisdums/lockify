@@ -32,7 +32,6 @@
 
 
 @section('content')
-
-
+    <img src="/{{$utilisateur -> avatar}}" alt="photo">
 
 @endsection

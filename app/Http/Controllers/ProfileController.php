@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\User;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -22,8 +23,9 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        return view('profile');
+        $u = User::findOrFail($id);
+        return view("profile", ['utilisateur' => $u]);
     }
 }

@@ -31,7 +31,7 @@
             <span>Famille</span>
         </a>
 
-        <a href="/profile">
+        <a href="/profile/{{Auth::user()->id}}">
             <div class="icon" style="background-image: url('/assets/images/menu/profil.svg')"></div>
             <span>Profil</span>
         </a>
@@ -42,37 +42,12 @@
 
 
 @section('content')
-    @php
-    $metiers=[
-        'antiquaire' => 'antiquaire.jpg',
-        'barbier' => 'barbier.jpg',
-        'bijoutier' => 'bijoutier.jpg',
-        'boulangerie' => 'boulangerie.jpg',
-        'charcuterie' => 'charcuterie.jpg',
-        'chocolaterie' => 'chocolaterie.jpg',
-        'coiffeur' => 'coiffeur.jpg',
-        'cordonier' => 'cordonier.jpg',
-        'couturière' => 'couturiere.jpg',
-        'épicerie' => 'epicerie.jpg',
-        'ésthéticienne' => 'estheticienne.jpg',
-        'fleuriste' => 'fleuriste.jpg',
-        'fromagerie' => 'fromagerie.jpg',
-        'garagiste' => 'garagiste.jpg',
-        'maroquinier' => 'maroquinier.jpg',
-        'opticien' => 'opticien.jpg',
-        'parfumerie' => 'parfumerie.jpg',
-        'pressing' => 'pressing.jpg',
-        'pressing' => 'pressing.jpg',
-        'prêt à porter' => 'pret-a-porter.jpg',
-        'réparateur de vélo' => 'reparateur de velo.jpg',
-        'taxidermiste' => 'taxidermiste.jpg',
-    ]
-    @endphp
+
     <div class="template_grid">
     @php($i=0)
-    @foreach ($metiers as $key => $value)
+    @foreach ($metiers as $m)
             @php($i++)
-            <a href="" class="grid{{$i}}"><img src="assets/images/metiers/{{$value}}" alt="{{$key}}"><span>{{$key}}</span></a>
+            <a href="" class="grid{{$i}}"><img src="{{$m -> image}}" alt="{{$m -> nom}}"><span>{{$m -> nom}}</span></a>
         @php
           if($i %9 ==0){
             $i =0;
