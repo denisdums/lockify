@@ -566,6 +566,7 @@ body{
 }
 
 .fond_scroller {
+    width: 110%;
     filter: blur(2px);
 }
 
