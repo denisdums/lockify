@@ -35,7 +35,6 @@
         'prêt à porter' => 'pret-a-porter.jpg',
         'réparateur de vélo' => 'reparateur de velo.jpg',
         'taxidermiste' => 'taxidermiste.jpg',
-
     ]
     @endphp
     <div class="template_grid">

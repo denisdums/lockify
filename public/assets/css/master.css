@@ -580,7 +580,7 @@ body{
 }
 
 .unscroll{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     position: absolute;
     top: 90px;
@@ -588,7 +588,7 @@ body{
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .btn_secteur{
@@ -607,6 +607,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 4vh;
+    width: 80%;
 }
 
 .btn_order{
