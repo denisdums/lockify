@@ -440,6 +440,7 @@ body{
 /*** Menu ***/
 
 .menu{
+    z-index: 1000;
     background-color: white;
     position: fixed;
     bottom: 0;
