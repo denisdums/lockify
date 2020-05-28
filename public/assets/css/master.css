@@ -494,7 +494,6 @@ body{
 
 .template_grid {
     justify-content: center;
-    background-color: crimson;
     display: grid;
     grid-template-columns: 12.5vh 12.5vh 12.5vh;
     grid-template-rows: 12.5vh 12.5vh 12.5vh 12.5vh;
@@ -505,22 +504,52 @@ body{
             "grid1 grid2 grid3"
             "grid1 grid4 grid5"
             "grid6 grid7 grid5"
-            "grid8 grid8 grid9"
-            ;
+            "grid8 grid8 grid9";
 }
 
-.grid1{grid-area: grid1; background-color: #7A2AE8}
-.grid2{grid-area: grid2; background-color: yellow}
-.grid3{grid-area: grid3; background-color: dodgerblue}
-.grid4{grid-area: grid4; background-color: aquamarine}
-.grid5{grid-area: grid5; background-color: chartreuse}
-.grid6{grid-area: grid6; background-color: gray}
-.grid7{grid-area: grid7; background-color: black}
-.grid8{grid-area: grid8; background-color: rosybrown}
-.grid9{grid-area: grid9; background-color: coral}
+.grid1{grid-area: grid1; }
+.grid2{grid-area: grid2; }
+.grid3{grid-area: grid3; }
+.grid4{grid-area: grid4; }
+.grid5{grid-area: grid5; }
+.grid6{grid-area: grid6; }
+.grid7{grid-area: grid7; }
+.grid8{grid-area: grid8; }
+.grid9{grid-area: grid9; }
 
 
+.template_grid a {
+     border-radius: 10px;
+     position: relative;
+     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.template_grid img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
+.template_grid span{
+    position: absolute;
+    left: 50%;
+    transform:translate(-50%);
+    bottom: 2vh;
+    max-width: 95%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: rgba(97, 56, 177, 0.8);
+    backdrop-filter: blur(1px);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
 
 
 
