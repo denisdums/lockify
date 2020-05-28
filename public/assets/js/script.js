@@ -31,7 +31,8 @@ $(document).ready(function(){
 
     $('#register_second_next').click(function () {
         $('.part_two').css('display','none');
-        $('.part_three').css('display','flex');
+        $('.part_three_ent').css('display','flex');
+        $('.part_three').css('display','block');
         $('.timeline_client').css('width','100%');
         $('.timeline_entrepreneur').css('width','30%');
     });
@@ -39,6 +40,7 @@ $(document).ready(function(){
     $('#register_second_previous').click(function () {
         $('.part_two').css('display','block');
         $('.part_three').css('display','none');
+        $('.part_three_ent').css('display','none');
         $('.timeline_client').css('width','66%');
         $('.timeline_entrepreneur').css('width','20%');
     });
@@ -56,7 +58,8 @@ $(document).ready(function(){
     });
 
     $('#register_third_previous').click(function () {
-        $('.part_three').css('display','flex');
+        $('.part_three_ent').css('display','flex');
+        $('.part_three').css('display','block');
         $('.part_four').css('display','none');
         $('.timeline_entrepreneur').css('width','40%');
     });
@@ -163,6 +166,116 @@ $(document).ready(function(){
         }
     });
 
+    $("#tuesday_button").on("change", ()=>{
+        if($("#tuesday_button").prop("checked")){
+            console.log('pas checked');
+            $('.horaire_tuesday').prop("checked", true);
+            $('.horaire_tuesday').prop("disabled", true);
+        }
+        else{
+            console.log('checked sqdds');
+            $('.horaire_tuesday').prop("checked", false);
+            $('.horaire_tuesday').prop("disabled", false);
+        }
+
+    });
+    $('#tuesday_morn').on('change',()=>{
+        if($('#tuesday_morn').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_tuesday.morn').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_tuesday.morn').prop("disabled", false);
+        }
+    });
+    $('#tuesday_after').on('change',()=>{
+        if($('#tuesday_after').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_tuesday.after').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_tuesday.after').prop("disabled", false);
+        }
+    });
+
+
+
+    $("#thursday_button").on("change", ()=>{
+        if($("#thursday_button").prop("checked")){
+            console.log('pas checked');
+            $('.horaire_thursday').prop("checked", true);
+            $('.horaire_thursday').prop("disabled", true);
+        }
+        else{
+            console.log('checked sqdds');
+            $('.horaire_thursday').prop("checked", false);
+            $('.horaire_thursday').prop("disabled", false);
+        }
+
+    });
+    $('#thursday_morn').on('change',()=>{
+        if($('#thursday_morn').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_thursday.morn').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_thursday.morn').prop("disabled", false);
+        }
+    });
+    $('#thursday_after').on('change',()=>{
+        if($('#thursday_after').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_thursday.after').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_thursday.after').prop("disabled", false);
+        }
+    });
+
+    $("#friday_button").on("change", ()=>{
+        if($("#friday_button").prop("checked")){
+            console.log('pas checked');
+            $('.horaire_friday').prop("checked", true);
+            $('.horaire_friday').prop("disabled", true);
+        }
+        else{
+            console.log('checked sqdds');
+            $('.horaire_friday').prop("checked", false);
+            $('.horaire_friday').prop("disabled", false);
+        }
+
+    });
+    $('#friday_morn').on('change',()=>{
+        if($('#friday_morn').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_friday.morn').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_friday.morn').prop("disabled", false);
+        }
+    });
+    $('#friday_after').on('change',()=>{
+        if($('#friday_after').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_friday.after').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_friday.after').prop("disabled", false);
+        }
+    });
+
 
 
 
@@ -186,6 +299,77 @@ $(document).ready(function(){
 
 });
 
+$("#saturday_button").on("change", ()=>{
+    if($("#saturday_button").prop("checked")){
+        console.log('pas checked');
+        $('.horaire_saturday').prop("checked", true);
+        $('.horaire_saturday').prop("disabled", true);
+    }
+    else{
+        console.log('checked sqdds');
+        $('.horaire_saturday').prop("checked", false);
+        $('.horaire_saturday').prop("disabled", false);
+    }
+
+});
+$('#saturday_morn').on('change',()=>{
+    if($('#saturday_morn').prop("checked")){
+        console.log('pas checked');
+
+        $('.horaire_saturday.morn').prop("disabled", true);
+    }
+    else{
+        console.log('checked')
+        $('.horaire_saturday.morn').prop("disabled", false);
+    }
+});
+$('#saturday_after').on('change',()=>{
+    if($('#saturday_after').prop("checked")){
+        console.log('pas checked');
+
+        $('.horaire_saturday.after').prop("disabled", true);
+    }
+    else{
+        console.log('checked')
+        $('.horaire_saturday.after').prop("disabled", false);
+    }
+});
+
+$("#sunday_button").on("change", ()=>{
+    if($("#sunday_button").prop("checked")){
+        console.log('pas checked');
+        $('.horaire_sunday').prop("checked", true);
+        $('.horaire_sunday').prop("disabled", true);
+    }
+    else{
+        console.log('checked sqdds');
+        $('.horaire_sunday').prop("checked", false);
+        $('.horaire_sunday').prop("disabled", false);
+    }
+
+});
+$('#sunday_morn').on('change',()=>{
+    if($('#sunday_morn').prop("checked")){
+        console.log('pas checked');
+
+        $('.horaire_sunday.morn').prop("disabled", true);
+    }
+    else{
+        console.log('checked')
+        $('.horaire_sunday.morn').prop("disabled", false);
+    }
+});
+$('#sunday_after').on('change',()=>{
+    if($('#sunday_after').prop("checked")){
+        console.log('pas checked');
+
+        $('.horaire_sunday.after').prop("disabled", true);
+    }
+    else{
+        console.log('checked')
+        $('.horaire_sunday.after').prop("disabled", false);
+    }
+});
 
 
 //affichage de la photo

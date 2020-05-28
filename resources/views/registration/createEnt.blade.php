@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form class="register" method="POST" action="{{ url('/registerEnt') }}" enctype="multipart/form-data">
+    <form class="register " method="POST" action="{{ url('/registerEnt') }}" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="part_one">
 
@@ -103,7 +103,7 @@
 
 
 
-            <div class="form-group form-flex part_three">
+            <div class="form-group form-flex part_three_ent">
                 <div class="jour_form">
                     <img src="/assets/images/fond.png" alt="image de fond">
                     <span class="jour_text">Lundi</span>
@@ -162,7 +162,7 @@
 
             <div class="open_button_reel" id="horaire_tuesday">
                 <div class="button r" id="button-3">
-                    <input type="checkbox" name="open_tuesday" class="checkbox">
+                    <input type="checkbox" name="open_tuesday" class="checkbox" id="tuesday_button">
                     <div class="knobs"></div>
                     <div class="layer"></div>
                 </div>
@@ -175,26 +175,26 @@
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="tuesday_morn" class="checkbox" id="tuesday_morn">
+                            <input type="checkbox" name="tuesday_morn" class="checkbox horaire_tuesday" id="tuesday_morn">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name="tuesday_morn_start" class="horaire_tuesday morn"> à  <input type="time" name="tuesday_morn_end"></div>
+                    <div class="ligne_form">De <input type="time" name="tuesday_morn_start" class="horaire_tuesday morn"> à  <input type="time" name="tuesday_morn_end" class="horaire_tuesday morn"></div>
                 </div>
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="tuesday_after" class="checkbox">
+                            <input type="checkbox" name="tuesday_after" class="checkbox horaire_tuesday" id="tuesday_after">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name="tuesday_after_start"> à  <input type="time" name="tuesday_after_start"></div>
+                    <div class="ligne_form">De <input type="time" name="tuesday_after_start" class="horaire_tuesday after"> à  <input type="time" name="tuesday_after_start" class="horaire_tuesday after"></div>
                 </div>
             </div>
 
@@ -213,7 +213,7 @@
 
             <div class="open_button_reel">
                 <div class="button r" id="button-3">
-                    <input type="checkbox" name="open_wednesday" class="checkbox">
+                    <input type="checkbox" name="open_wednesday" class="checkbox" id="wednesday_button">
                     <div class="knobs"></div>
                     <div class="layer"></div>
                 </div>
@@ -226,26 +226,26 @@
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="wednesday_morn" class="checkbox">
+                            <input type="checkbox" name="wednesday_morn" class="checkbox horaire_wednesday" id="wednesday_morn">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name="wednesday_morn_start"> à  <input type="time" name="wednesday_morn_end"></div>
+                    <div class="ligne_form">De <input type="time" name="wednesday_morn_start" class="horaire_wednesday morn"> à  <input type="time" name="wednesday_morn_end" class="horaire_wednesday morn"></div>
                 </div>
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="wednesday_after" class="checkbox">
+                            <input type="checkbox" name="wednesday_after" class="checkbox horaire_wednesday" id="wednesday_after">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name="wednesday_after_start"> à  <input type="time" name="wednesday_after_end"></div>
+                    <div class="ligne_form">De <input type="time" name="wednesday_after_start" class="horaire_wednesday after"> à  <input class="horaire_wednesday after" type="time" name="wednesday_after_end"></div>
                 </div>
             </div>
 
@@ -264,7 +264,7 @@
 
             <div class="open_button_reel">
                 <div class="button r" id="button-3">
-                    <input type="checkbox" name="open_thursday" class="checkbox">
+                    <input type="checkbox" name="open_thursday" class="checkbox" id="thursday_button">
                     <div class="knobs"></div>
                     <div class="layer"></div>
                 </div>
@@ -277,26 +277,26 @@
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="thursday_morn" class="checkbox">
+                            <input type="checkbox" name="thursday_morn" class="checkbox horaire_thursday" id="thursday_morn">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name="thursday_morn_start"> à  <input type="time" name="thursday_morn_end"></div>
+                    <div class="ligne_form">De <input type="time" name="thursday_morn_start" class="horaire_thursday morn"> à  <input class="horaire_thursday morn" type="time" name="thursday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="thursday_after" class="checkbox">
+                            <input type="checkbox" name="thursday_after" class="checkbox  horaire_thursday" id="thursday_after">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name="thursday_after_start"> à  <input type="time" name="thursday_after_end"></div>
+                    <div class="ligne_form">De <input type="time" name="thursday_after_start" class="horaire_thursday after"> à  <input class="horaire_thursday after" type="time" name="thursday_after_end"></div>
                 </div>
             </div>
 
@@ -315,7 +315,7 @@
 
             <div class="open_button_reel">
                 <div class="button r" id="button-3">
-                    <input type="checkbox" name="open_friday" class="checkbox">
+                    <input type="checkbox" name="open_friday" class="checkbox" id="friday_button">
                     <div class="knobs"></div>
                     <div class="layer"></div>
                 </div>
@@ -328,26 +328,26 @@
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="friday_morn" class="checkbox">
+                            <input type="checkbox" name="friday_morn" class="checkbox horaire_friday" id="friday_morn">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name="friday_morn_start"> à  <input type="time" name="friday_morn_end"></div>
+                    <div class="ligne_form">De <input type="time" name="friday_morn_start" class="horaire_friday morn"> à  <input class="horaire_friday morn" type="time" name="friday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="friday_after" class="checkbox">
+                            <input type="checkbox" name="friday_after" class="checkbox horaire_friday" id="friday_after">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name="friday_after_start"> à  <input type="time" name="friday_after_end"></div>
+                    <div class="ligne_form">De <input type="time" name="friday_after_start" class="horaire_friday after"> à  <input class="horaire_friday after" type="time" name="friday_after_end"></div>
                 </div>
             </div>
 
@@ -366,7 +366,7 @@
 
             <div class="open_button_reel">
                 <div class="button r" id="button-3">
-                    <input type="checkbox" name="open_saturday" class="checkbox">
+                    <input type="checkbox" name="open_saturday" class="checkbox" id="saturday_button">
                     <div class="knobs"></div>
                     <div class="layer"></div>
                 </div>
@@ -379,26 +379,26 @@
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="saturday_morn" class="checkbox">
+                            <input type="checkbox" name="saturday_morn" class="checkbox horaire_saturday" id="saturday_morn">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name="saturday_morn_start"> à  <input type="time" name="saturday_morn_end"></div>
+                    <div class="ligne_form">De <input type="time" name="saturday_morn_start" class="horaire_saturday morn"> à  <input class="horaire_saturday morn" type="time" name="saturday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="saturday_after" class="checkbox">
+                            <input type="checkbox" name="saturday_after" class="checkbox horaire_saturday" id="saturday_after">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name="saturday_after_start"> à  <input type="time" name="saturday_after_end"></div>
+                    <div class="ligne_form">De <input type="time" name="saturday_after_start" class="horaire_saturday after"> à  <input type="time" class="horaire_saturday after" name="saturday_after_end"></div>
                 </div>
             </div>
 
@@ -417,7 +417,7 @@
 
             <div class="open_button_reel">
                 <div class="button r" id="button-3">
-                    <input type="checkbox" name="open_sunday" class="checkbox">
+                    <input type="checkbox" name="open_sunday" class="checkbox" id="sunday_button">
                     <div class="knobs"></div>
                     <div class="layer"></div>
                 </div>
@@ -430,26 +430,26 @@
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="sunday_morn" class="checkbox">
+                            <input type="checkbox" name="sunday_morn" class="checkbox horaire_sunday" id="sunday_morn">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Matin
                     </div>
-                    <div class="ligne_form">De <input type="time" name="sunday_morn_start"> à  <input type="time" name="sunday_morn_end"></div>
+                    <div class="ligne_form">De <input type="time" name="sunday_morn_start" class="horaire_sunday morn"> à  <input class="horaire_sunday morn" type="time" name="sunday_morn_end"></div>
                 </div>
                 <div>
                     <div class="open_button">
                         <div class="button r" id="button-3">
-                            <input type="checkbox" name="sunday_after" class="checkbox">
+                            <input type="checkbox" name="sunday_after" class="checkbox horaire_sunday" id="sunday_after">
                             <div class="knobs"></div>
                             <div class="layer"></div>
                         </div>
 
                         Après-midi
                     </div>
-                    <div class="ligne_form">De <input type="time" name="sunday_after_start"> à  <input type="time" name="sunday_after_end"></div>
+                    <div class="ligne_form">De <input type="time" name="sunday_after_start" class="horaire_sunday after"> à  <input class="horaire_sunday after" type="time" name="sunday_after_end"></div>
                 </div>
             </div>
 
