@@ -23,9 +23,9 @@ Route::get('/notifications', 'NotificationsController@index');
 Route::get('/family', 'FamilyController@index');
 
 Route::get('/register/client', 'RegistrationController@create');
-Route::get('/register/entrepreneur', 'RegistrationController@createEnt');
+Route::get('/register/entrepreneur', 'RegistrationEntController@create');
 Route::post('/register', 'RegistrationController@store');
-Route::post('/registerEnt', 'RegistrationController@storeEnt');
+Route::post('/registerEnt', 'RegistrationEntController@store');
 
 
 

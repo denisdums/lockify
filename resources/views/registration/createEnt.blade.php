@@ -29,11 +29,9 @@
             @endif
 
             <select name="categorie" class="form-input">
-                <option value="boucher">Boucher</option>
-                <option value="coiffeur">Coiffeur</option>
-                <option value="garage">Garage</option>
-                <option value="opticien">Opticien</option>
-                <option value="boucher">Boucher</option>
+                @foreach($metiers as $m)
+                    <option value="{{$m -> nom}}">{{$m -> nom}}</option>
+                @endforeach
             </select>
 
         <input id="description" type="text" class="form-input" name="description" value="{{ old('description') }}" placeholder="Description">

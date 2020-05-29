@@ -2,32 +2,35 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Entreprise;
+use App\Metier;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests;
 
 
-class RegistrationController extends Controller
+class RegistrationEntController extends Controller
 {
     public function create()
     {
-        return view('registration.create');
+        $m = Metier::all();
+        return view('registration.createEnt', ['metiers' => $m]);
     }
-
-
 
     public function store(Request $request)
     {
 
 
         $this->validate($request, [
-            'firstname' => 'required',
-            'lastname' => 'required',
-            'birthdate'=>'required|date',
+            'entreprisename' => 'required',
             'email' => 'required|email',
             'phone'=>'required|digits:10',
             'adresse'=>'required',
+            'categorie'=>'required',
+            'description' => 'required',
+            'clientmax' => 'required',
+            'creneau' => 'required',
             'ville'=>'required',
             'pays'=>'required',
             'password' => 'required|confirmed',
@@ -38,11 +41,11 @@ class RegistrationController extends Controller
         $request->file('avatar')->move("uploads/", $avatar);
 
         $c = new User();
-        $c->firstname = $request->input('firstname');
-        $c->lastname = $request->input('lastname');
-        $c->entrepreneur = false;
-        $c->birthdate = $request->input('birthdate');
+        $c->firstname = "test";
+        $c->lastname = "nomdefamille";
+        $c->entrepreneur = true;
         $c->email = $request->input('email');
+        $c->birthdate = null;
         $c->phone = $request->input('phone');
         $c->adresse = $request->input('adresse');
         $c->ville = $request->input('ville');
@@ -52,11 +55,9 @@ class RegistrationController extends Controller
         $c-> save();
 
 
-        if(Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')], true));
+        if(Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')], true))
+
 
         return redirect()->to('/home');
-
     }
-
-
 }
