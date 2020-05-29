@@ -15,14 +15,6 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="main">
-        @yield('content')
-    </div>
-
-
-
-
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/script.js"></script>
 </body>

@@ -27,11 +27,27 @@
     </div>
 </div>
 
+<div class="img_profil">
+    <img src="/{{$utilisateur -> avatar}}" alt="photo">
+</div>
+
+<div class="bas_de_profil">
+    <a href="" class="link_profile"><div class="icon_link_profile"><img src="/assets/images/edit.svg" alt="icon_edit"></div></a>
+    <span class="name_user">{{$utilisateur -> firstname}} {{$utilisateur -> lastname}}</span>
+    <span class="id_user">#{{$utilisateur -> id}}</span>
+    <span class="fav_user">Mes favoris</span>
+    <div class="fav">
+        <span>nom du favoris</span>
+    </div>
+</div>
+
 
 @extends('layouts.home')
 
 
 @section('content')
-    <img src="/{{$utilisateur -> avatar}}" alt="photo">
+
+
+
 
 @endsection

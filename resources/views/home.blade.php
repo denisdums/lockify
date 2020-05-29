@@ -54,7 +54,6 @@
             echo "</div><div class='template_grid'>";
         }
         @endphp
-
     @endforeach
     </div>
 
