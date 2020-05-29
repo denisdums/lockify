@@ -628,3 +628,20 @@ body{
     object-fit: contain;
 }
 
+.famille_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.famille_title > hr{
+    flex-basis: 50%;
+}
+
+.famille_title > a{
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: none;
+}
+

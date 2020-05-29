@@ -1,3 +1,8 @@
+<div class="scroller">
+    <img src="assets/images/fond.png" alt="background" class="fond_scroller">
+    <img src="assets/images/logo_blanc.svg" alt="logo_blanc" class="logo_scroller">
+</div>
+
 <div class="menu">
     <div class="container_menu">
         <a href="/home">
@@ -33,16 +38,10 @@
 
 @section('content')
 
-
-
-@endsection
-
-
-@extends('layouts.home')
-
-
-@section('content')
-
-
+<div class="famille_title">
+    <h2>FAMILLE</h2><hr><a href="#">+</a>
+</div>
 
 @endsection
+
+

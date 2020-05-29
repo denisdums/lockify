@@ -26,4 +26,6 @@ class FamilyController extends Controller
     {
         return view('family');
     }
+
+
 }
