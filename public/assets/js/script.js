@@ -207,6 +207,42 @@ $(document).ready(function(){
         }
     });
 
+    $("#wednesday_button").on("change", ()=>{
+        if($("#wednesday_button").prop("checked")){
+            console.log('pas checked');
+            $('.horaire_wednesday').prop("checked", true);
+            $('.horaire_wednesday').prop("disabled", true);
+        }
+        else{
+            console.log('checked sqdds');
+            $('.horaire_wednesday').prop("checked", false);
+            $('.horaire_wednesday').prop("disabled", false);
+        }
+
+    });
+    $('#wednesday_morn').on('change',()=>{
+        if($('#wednesday_morn').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_wednesday.morn').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_wednesday.morn').prop("disabled", false);
+        }
+    });
+    $('#wednesday_after').on('change',()=>{
+        if($('#wednesday_after').prop("checked")){
+            console.log('pas checked');
+
+            $('.horaire_wednesday.after').prop("disabled", true);
+        }
+        else{
+            console.log('checked')
+            $('.horaire_wednesday.after').prop("disabled", false);
+        }
+    });
+
 
 
     $("#thursday_button").on("change", ()=>{
