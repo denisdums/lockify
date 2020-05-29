@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $u = Metier::all();
-        return view("home", ['metiers' => $u]);
+        $a = Metier::all();
+        return view("home", ['metiers' => $a]);
     }
 }
