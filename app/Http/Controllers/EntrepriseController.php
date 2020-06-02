@@ -12,4 +12,9 @@ class EntrepriseController extends Controller
     {
         return view('entreprise.index');
     }
+
+    public function charcut()
+    {
+        return view('charcut.index');
+    }
 }

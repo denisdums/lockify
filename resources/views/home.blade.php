@@ -10,7 +10,7 @@
         @endphp
         @foreach ($metiers as $m)
             @php($i++)
-            <a href="" class="grid{{$i}}"><img src="{{$m -> image}}" alt="{{$m -> nom}}"><span>{{$m -> nom}}</span></a>
+            <a href="/charcuterie" class="grid{{$i}}"><img src="{{$m -> image}}" alt="{{$m -> nom}}"><span>{{$m -> nom}}</span></a>
             @php
                 if($i %9 ==0){
                   $i =0;

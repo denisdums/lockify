@@ -28,6 +28,7 @@ Route::get('/entreprise/add/done', 'FamilyController@doneEnt');
 
 
 Route::get('/entreprise/1', 'EntrepriseController@index');
+Route::get('/charcuterie', 'EntrepriseController@charcut');
 
 Route::get('/register/client', 'RegistrationController@create');
 Route::get('/register/entrepreneur', 'RegistrationEntController@create');
