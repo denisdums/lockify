@@ -830,3 +830,50 @@ body{
     width: 100%;
     border: 0.8px solid black;
 }
+
+
+.notif_container{
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    background: #F0EEFF;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.avatar_notif{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 7vh;
+    height: 7vh;
+    background-color: #151A2B;
+}
+
+.avatar_notif img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenu_notif{
+    width: 75%;
+    height: 90%;
+
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0,-50%);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.date_notif{
+    margin-top: 3px;
+    font-weight: normal;
+    font-size: 8pt;
+}
