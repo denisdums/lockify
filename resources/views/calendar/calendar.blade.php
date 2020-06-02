@@ -56,7 +56,7 @@
     </div>
 
     <div class="date">
-        <span>SAM 6/06</span>
+        <span>06/06/2020</span>
         <hr>
     </div>
 

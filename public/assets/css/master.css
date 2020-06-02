@@ -762,6 +762,59 @@ body{
     align-items: center;
 }
 
+.ouverture_ent{
+    margin: 20px 0 20px 8vw;
+    font-weight: 800;
+    color: #7A2AE8;
+}
+
+.desc_ent{
+    margin: 0 8vw 10px 8vw;
+}
+.trait_ent{
+    width: calc(100% - 16vw);
+    margin: 0 8vw 10px 8vw;
+}
+
+.horaires_ent{
+    margin-left: 8vw;
+}
+
+.horaires_dispo{
+    width: calc(100% - 16vw);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-height:250px ;
+    overflow: scroll;
+}
+
+.cases{
+    flex-basis: 30%;
+    margin-right: 5%;
+    height: 40px;
+    background: #7A2AE8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.cases:nth-child(3n){
+    margin: 0;
+}
+
+.date_ent{
+    width: 50%;
+    margin: 20px auto 0px auto;
+    border: none;
+    color: #7A2AE8;
+
+}
+
 
 
 
@@ -784,6 +837,8 @@ body{
     width: 100%;
     height: 70vh;
     background-color: black;
+    position: fixed;
+    top: 0;
 }
 
 .img_profil img{
@@ -797,13 +852,16 @@ body{
     display: flex;
     flex-direction: column;
     left: 0;
-    bottom: 9vh;
     width: 100%;
-    height: 40vh;
+    min-height: 40vh;
+    top: 50vh;
+
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    background-color: white;
+    background: white;
 }
+
+
 .icon_link_profile{
     width: 6vh;
     height: 6vh;
@@ -813,6 +871,8 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
 
 .icon_link_profile img {
     width: 50%;
