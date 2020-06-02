@@ -686,6 +686,10 @@ body{
     margin-bottom: 10px;
 }
 
+.person > h2{
+    font-size: 14px;
+}
+
 
 
 
