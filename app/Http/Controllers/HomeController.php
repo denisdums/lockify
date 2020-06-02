@@ -8,16 +8,15 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()
-    {
-        $a = Metier::all();
-        return view("home", ['metiers' => $a]);
-    }
 
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-
+    public function index()
+    {
+        $m = Metier::all();
+        return view('home', ['metiers' => $m]);
+    }
 }
