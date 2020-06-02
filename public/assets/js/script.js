@@ -1,6 +1,18 @@
 $(document).ready(function(){
 
+    $('.like').on('click', ()=>{
 
+
+        if ($('.like').attr('src') == "/assets/images/coeur.png"){
+            console.log('coucou')
+            $('.like').attr('src',"/assets/images/coeurlike.png" );
+        }
+        else{
+            $('.like').attr('src',"/assets/images/coeur.png" );
+        }
+
+
+    });
 
 
     //animation du loading de l'app et de la page welcome

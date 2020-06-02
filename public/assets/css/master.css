@@ -923,6 +923,12 @@ body{
     border-radius: 10px;
 }
 
+.like{
+    position: absolute;
+    top: 5vh;
+    right: 50px;
+}
+
 .fav span{
     position: absolute;
     left: 50%;
