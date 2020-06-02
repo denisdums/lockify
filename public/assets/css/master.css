@@ -801,3 +801,32 @@ body{
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+
+
+
+
+
+
+
+
+/*** Notifs ***/
+.date{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.date span {
+    font-weight: 500;
+    font-size: 12.5pt;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    padding-right: 10px;
+}
+
+.date hr{
+    width: 100%;
+    border: 0.8px solid black;
+}

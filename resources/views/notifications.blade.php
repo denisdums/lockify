@@ -1,48 +1,20 @@
-<div class="menu">
-    <div class="container_menu">
-        <a href="/home">
-            <div class="icon" style="background-image: url('/assets/images/menu/home.svg')"></div>
-            <span>Home</span>
-        </a>
 
-        <a href="/notifications" class="menu_selected">
-            <div class="icon" style="background-image: url('/assets/images/menu/notifications.svg')"></div>
-            <span>Notifications</span>
-        </a>
+@extends('layouts.notif')
 
-        <a href="/calendar" >
-            <div class="icon" style="background-image: url('/assets/images/menu/calendrier.svg')"></div>
-            <span>Calendrier</span>
-        </a>
 
-        <a href="/family">
-            <div class="icon" style="background-image: url('/assets/images/menu/famille.svg')"></div>
-            <span>Famille</span>
-        </a>
-
-        <a href="/profile/{{Auth::user()->id}}"  >
-            <div class="icon" style="background-image: url('/assets/images/menu/profil.svg')"></div>
-            <span>Profil</span>
-        </a>
+@section('content')
+    <div class="date">
+        <span>Aujourd'hui</span>
+        <hr>
     </div>
-</div>
 
 
-@extends('layouts.home')
-
-
-@section('content')
-
-
-
-@endsection
-
-
-@extends('layouts.home')
-
-
-@section('content')
+    <div class="date">
+        <span>21/05/2020</span>
+        <hr>
+    </div>
 
 
 
 @endsection
+
