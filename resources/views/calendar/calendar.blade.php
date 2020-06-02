@@ -56,7 +56,7 @@
     </div>
 
     <div class="date">
-        <span>SAM 6/06</span>
+        <span>6/06</span>
         <hr>
     </div>
 
