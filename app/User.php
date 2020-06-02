@@ -30,4 +30,8 @@ class User extends Authenticatable
     {
         $this->attributes['password'] = bcrypt($password);
     }
+
+    public function family(){
+        return $this->hasMany('App\Famille');
+    }
 }

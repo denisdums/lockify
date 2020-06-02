@@ -20,7 +20,7 @@
             <span>Famille</span>
         </a>
 
-        <a href="/profile"  class="menu_selected">
+        <a href="/profile/{{Auth::user()->id}}"  class="menu_selected">
             <div class="icon" style="background-image: url('/assets/images/menu/profil.svg')"></div>
             <span>Profil</span>
         </a>
