@@ -21,6 +21,7 @@ Route::get('/profile/{id}', 'ProfileController@index')->where('id', '[0-9]+')->m
 Route::get('/calendar', 'CalendarController@index');
 Route::get('/notifications', 'NotificationsController@index');
 Route::get('/family', 'FamilyController@index');
+Route::get('/family/add', 'FamilyController@add');
 
 Route::get('/register/client', 'RegistrationController@create');
 Route::get('/register/entrepreneur', 'RegistrationEntController@create');

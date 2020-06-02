@@ -84,6 +84,20 @@ body{
     bottom: 50px;
 }
 
+.btn_box_menu{
+    position: absolute;
+    width: 100%;
+    bottom: 10vh;
+}
+
+.logo_scroller_menu{
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
 .fill_box_btn{
     background-color: white;
 }
@@ -626,6 +640,50 @@ body{
     width: 80%;
     height: 80%;
     object-fit: contain;
+}
+
+.container_leo{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.famille_title{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.famille_title > hr{
+    width: 50%;
+}
+
+.famille_title > a{
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.photo_family{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.photo_family > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.person{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 

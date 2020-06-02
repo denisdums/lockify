@@ -8,24 +8,16 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $a = Metier::all();
         return view("home", ['metiers' => $a]);
     }
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
 }
