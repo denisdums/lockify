@@ -8,12 +8,46 @@
         <hr>
     </div>
 
+    <div class="notif_container">
+        <div class="avatar_notif">
+            <img src="/uploads/ecb118cc4e7a6fc910d295fd05523cc1.jpeg" alt="img_notif">
+        </div>
+
+        <div class="contenu_notif">
+            <span class="text_notif"><b>Léo Delplanque</b> a annuler un rendez-vous pour <b>Boucherie Couteau</b> le 23/05/2020 à 14h. </span>
+            <span class="date_notif">10H37</span>
+        </div>
+    </div>
+
+    <div class="notif_container">
+        <div class="avatar_notif">
+            <img src="/uploads/ecb118cc4e7a6fc910d295fd05523cc1.jpeg" alt="img_notif">
+        </div>
+
+        <div class="contenu_notif">
+            <span class="text_notif"><b>Léo Delplanque</b> a pris un rendez-vous pour <b>Coiffeur Ciseaux</b> le 23/05/2020 à 17h. </span>
+            <span class="date_notif">9H16</span>
+        </div>
+    </div>
+
+
+
 
     <div class="date">
         <span>21/05/2020</span>
         <hr>
     </div>
 
+    <div class="notif_container">
+        <div class="avatar_notif">
+            <img src="/uploads/ecb118cc4e7a6fc910d295fd05523cc1.jpeg" alt="img_notif">
+        </div>
+
+        <div class="contenu_notif">
+            <span class="text_notif"><b>Léo Delplanque</b> a pris un rendez-vous pour <b>Poissonier Citron</b> le 22/05/2020 à 18h. </span>
+            <span class="date_notif">19H16</span>
+        </div>
+    </div>
 
 
 @endsection
