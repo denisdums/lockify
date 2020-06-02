@@ -26,6 +26,9 @@ Route::get('/family/add/done', 'FamilyController@done');
 Route::get('/entreprise/add', 'FamilyController@addEnt');
 Route::get('/entreprise/add/done', 'FamilyController@doneEnt');
 
+
+Route::get('/entreprise/1', 'EntrepriseController@index');
+
 Route::get('/register/client', 'RegistrationController@create');
 Route::get('/register/entrepreneur', 'RegistrationEntController@create');
 Route::post('/register', 'RegistrationController@store');

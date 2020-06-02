@@ -18,9 +18,9 @@ class FamilyController extends Controller
     }
 
     public function index()
-    {
-        return view('family.family');
-    }
+{
+    return view('family.family');
+}
 
     public function add()
     {

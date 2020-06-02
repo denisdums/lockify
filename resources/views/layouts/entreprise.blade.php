@@ -14,14 +14,7 @@
     <link rel="stylesheet" href="/assets/css/master.css">
 </head>
 <body>
-<div class="scroller">
-    <img src="/assets/images/fond.png" alt="background" class="fond_scroller">
-    <img src="/assets/images/logo_blanc.svg" alt="logo_blanc" class="logo_scroller">
-    <div class="unscroll">
-        <span class="btn_secteur">rechercher un secteur</span>
-        <div class="btn_order"><img src="assets/images/order.svg" alt="btn_order_img"></div>
-    </div>
-</div>
+
 
 
 
@@ -54,10 +47,8 @@
     </div>
 </div>
 
-    <div class="main">
-        @yield('content')
-    </div>
 
+    @yield('content')
 
 
 
@@ -65,6 +56,7 @@
 <script src="/assets/js/script.js"></script>
 </body>
 </html>
+
 
 
 
