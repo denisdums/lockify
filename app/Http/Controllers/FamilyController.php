@@ -32,5 +32,20 @@ class FamilyController extends Controller
         return view('family.add');
     }
 
+    public function done()
+    {
+        return view('family.done');
+    }
+
+    public function addEnt()
+    {
+        return view('family.addent');
+    }
+
+    public function doneEnt()
+    {
+        return view('family.doneent');
+    }
+
 
 }
