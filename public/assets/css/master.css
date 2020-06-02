@@ -978,6 +978,10 @@ body{
     margin-bottom: 15px;
 }
 
+.no_color{
+    background: inherit;
+}
+
 .avatar_notif{
     position: absolute;
     top: 5px;
